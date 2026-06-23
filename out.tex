@@ -1,0 +1,56 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{geometry}%
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\DeclareUnicodeCharacter{2212}{−}
+\usepgfplotslibrary{groupplots,dateplot}
+\usetikzlibrary{patterns,shapes.arrows}
+\pgfplotsset{compat=newest}
+%
+%
+%
+\begin{document}%
+\normalsize%
+\section{Intro}%
+\label{sec:Intro}%
+PUT STATIC INTRO HERE%
+
+\section{Report summary}%
+\label{sec:Summary}%
+Date: 2026-06-23 17:24:42\newline
+Addr: j\newline
+Insepctor: j\newline
+Room: j\newline
+j test\newline
+Radon detection over time\newline
+Min: 1\newline
+Max: 8\newline
+Avg:4.5\newline
+Temperature over time\newline
+Min: 2\newline
+Max: 9\newline
+Avg:5.5\newline
+Humidity over time\newline
+Min: 0\newline
+Max: 9\newline
+Avg:4.833333333333333\newline
+\newline
+Start time: 2026-01-01 01:01:01\newline
+End time: 2026-01-01 01:06:01\newline
+Test length: 0:05:00\newline
+%
+
+\section{Individual reports}%
+\label{sec:Reports}%
+\input{radon.tex}
+\newline%
+\input{temp.tex}
+\newline%
+\input{humid.tex}
+
+%
+\end{document}
