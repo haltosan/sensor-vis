@@ -1,0 +1,21 @@
+Generate a pretty report from the sensor data
+
+Display
+	x radon levels over time
+	x temp over time
+	x humidity over time
+	
+	x min/max/avg radon for a time window
+	x test length
+	x start time
+	x end time
+	addr
+	inspector
+	location/room
+	is this an initial or follow up test
+
+Pretty things (static)
+	company logo
+	intro about radon levels and how the test works
+
+

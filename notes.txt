@@ -1,0 +1,12 @@
+https://tex.stackexchange.com/questions/245982/differences-between-texlive-packages-in-linux
+
+
+Future steps:
+- test on windows
+	- get MiKTeX
+	- get python
+
+sudo apt install
+	texlive
+	texlive-pictures	
+	texlive-latex-extra
