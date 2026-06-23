@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates
 import numpy as np
 import matplot2tikz
-
+import sys
 from datetime import datetime
 
 start_time = None
@@ -44,17 +44,19 @@ def show_column(column, data_file, title, ylabel, tex):
     plt.close()
 
 
-def show_columns():
+def show_columns(fname):
     reports = [
-            ['RADON_SHORT_TERM_AVG pCi/L', 'data/ex.csv', 'Radon detection over time', 'Radon pCi/L', 'radon'],
-            ['TEMP °F', 'data/ex.csv', 'Temperature over time', 'Degrees F', 'temp'],
-            ['HUMIDITY %', 'data/ex.csv', 'Humidity over time', 'Humidity %', 'humid']
+            ['RADON_SHORT_TERM_AVG pCi/L', 'Radon detection over time', 'Radon pCi/L', 'radon'],
+            ['TEMP °F', 'Temperature over time', 'Degrees F', 'temp'],
+            ['HUMIDITY %', 'Humidity over time', 'Humidity %', 'humid']
     ]
     for report in reports:
-        show_column(report[0], report[1], report[2], report[3], report[4])
+        show_column(report[0], fname, report[1], report[2], report[3])
+
+fname = sys.argv[1]
 
 user_input()
-show_columns()
+show_columns(fname)
 summary += '\\newline\n'
 summary += 'Start time: ' + str(start_time) + '\\newline\n'
 summary += 'End time: ' + str(end_time) + '\\newline\n'
